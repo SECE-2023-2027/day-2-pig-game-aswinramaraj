@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(to right, #c33764, #1d2671);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.game {
+  background: rgba(255, 255, 255, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  max-width: 900px;
+  padding: 2rem;
+  border-radius: 15px;
+  position: relative;
+}
+.player {
+  padding: 2rem;
+  text-align: center;
+}
+.player--active {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+}
+.score {
+  font-size: 4rem;
+  color: #ff6f91;
+}
+.current {
+  background: #ff4e69;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+.current-label {
+  font-size: 1rem;
+}
+.current-score {
+  font-size: 2rem;
+}
+.dice {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 80px;
+  transform: translate(-50%, -50%);
+}
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  cursor: pointer;
+  background: #fff;
+  color: #333;
+}
+.btn--new {
+  top: 1rem;
+  margin-bottom: 20px;
+}
+.btn--roll {
+  top: 60%;
+    margin-bottom: 50px;
+
+}
+.btn--hold {
+  top: 70%;
+    margin-bottom: 20px;
+
+}
+.hidden {
+  display: none;
+}
